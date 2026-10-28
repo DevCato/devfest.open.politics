@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DevFest Lima 2026 · Política de Privacidad</title>
+<meta name="description" content="Política de privacidad de la aplicación DevFest Lima 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Outfit',sans-serif;color:#1E1E1E;background-color:#F1F1F1;background-image:radial-gradient(rgba(30,30,30,.09) 1.2px,transparent 1.2px);background-size:22px 22px;min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden}
+a{color:#1A73E8;text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:3px}
+a:hover{color:#174EA6}
+a:focus-visible{outline:3px solid #4285F4;outline-offset:3px;border-radius:6px}
+mark{background:#FDE293;color:#1E1E1E;border-radius:6px;padding:1px 5px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+
+.topbar{height:80px;padding:0 64px;display:flex;align-items:center;justify-content:space-between;border-bottom:2.5px solid #1E1E1E;background:#fff;position:relative;z-index:2}
+.logo{font-size:24px;font-weight:800;letter-spacing:-.5px;white-space:nowrap}
+.logo .o{color:#4285F4}.logo .y{color:#FBBC04}
+.topbar a{color:#1E1E1E;font-size:14px;font-weight:600}
+
+.deco{position:absolute;pointer-events:none;animation:aFloat var(--fdur,8s) cubic-bezier(.37,0,.63,1) infinite alternate both}
+@keyframes aFloat{from{translate:0 0;rotate:0deg}to{translate:var(--fx,0) var(--fy,-8px);rotate:var(--fr,0deg)}}
+.hero-wrap{position:relative}
+
+header.hero{position:relative;padding:64px 64px 24px;display:flex;flex-direction:column;gap:20px;max-width:884px}
+.pills{display:flex;gap:8px;flex-wrap:wrap}
+.pill{height:30px;padding:0 12px;border-radius:999px;display:inline-flex;align-items:center;font-size:13px;font-weight:700}
+.pill.dark{background:#1E1E1E;color:#fff}
+.pill.blue{background:#C6ECFF;border:2px solid #1E1E1E}
+.pill.white{background:#fff;border:2px solid #1E1E1E}
+h1{margin:0;font-size:76px;font-weight:800;letter-spacing:-2.6px;line-height:1;text-wrap:balance}
+.updated{margin:0;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:600;color:#5F6368}
+.intro{margin:0;font-size:20px;line-height:1.6;text-wrap:pretty}
+
+main{padding:24px 64px 88px;display:grid;grid-template-columns:300px minmax(0,760px);justify-content:space-between;align-items:start;gap:32px}
+nav{background:#fff;border:2.5px solid #1E1E1E;border-radius:24px;box-shadow:5px 5px 0 #57CAFF;padding:22px 24px 18px;position:sticky;top:24px}
+nav h2{margin:0 0 6px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#5F6368}
+nav ol{margin:0;padding:0;list-style:none}
+nav a{display:flex;gap:12px;align-items:baseline;color:#1E1E1E;text-decoration:none;font-size:15px;font-weight:600;line-height:1.35;padding:7px 0}
+nav a:hover{color:#1A73E8}
+nav a span:first-child{font-family:'JetBrains Mono',monospace;font-size:12px;color:#5F6368;min-width:20px}
+
+.sections{display:flex;flex-direction:column;gap:28px}
+section{background:#fff;border:2.5px solid #1E1E1E;border-radius:28px;box-shadow:7px 7px 0 var(--c);padding:36px 44px 40px;display:flex;flex-direction:column;gap:14px;scroll-margin-top:24px}
+.sec-head{display:flex;align-items:center;gap:18px}
+.badge{width:46px;height:46px;flex-shrink:0;border-radius:14px;background:var(--t);border:2.5px solid #1E1E1E;box-shadow:3px 3px 0 #1E1E1E;transform:rotate(-6deg);display:inline-flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:600}
+h2.title{margin:0;font-size:28px;font-weight:800;letter-spacing:-.4px;line-height:1.15;text-wrap:balance}
+.body{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+.body p{margin:0;font-size:17px;line-height:1.65;text-wrap:pretty}
+h3{margin:8px 0 0;display:flex;align-items:center;gap:10px;font-size:19px;font-weight:700}
+h3 .l{width:26px;height:26px;flex-shrink:0;border-radius:50%;background:#1E1E1E;color:#fff;display:inline-flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600}
+ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px}
+.body li{display:flex;gap:14px;align-items:baseline;font-size:17px;line-height:1.65}
+.body li::before{content:"";width:9px;height:9px;flex-shrink:0;border-radius:3px;background:var(--c);border:1.5px solid #1E1E1E;transform:translateY(-2px) rotate(12deg)}
+p.note{margin:2px 0 0;display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border-radius:16px;background:var(--nt);border:2px solid #1E1E1E;box-shadow:3px 3px 0 var(--nc);font-size:17px;line-height:1.5;font-weight:600}
+p.note svg{flex-shrink:0;margin-top:2px}
+dl{margin:0;display:flex;flex-direction:column;gap:10px}
+dl>div{display:flex;align-items:baseline;gap:16px;padding:12px 16px;border-radius:14px;background:#F1F1F1;border:2px solid #1E1E1E}
+dt{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:600;color:#5F6368;min-width:90px;padding-top:3px}
+dd{margin:0;font-size:17px;font-weight:600;overflow-wrap:anywhere}
+
+footer{margin-top:auto;background:#1E1E1E;color:#fff;padding:48px 64px;display:flex;gap:64px;justify-content:space-between;flex-wrap:wrap}
+footer .logo{font-size:26px}
+footer .o{color:#57CAFF}
+footer .col{display:flex;flex-direction:column;gap:10px}
+footer .muted{font-size:14px;color:#C6C6C6}
+footer .links{display:flex;gap:16px;margin-top:6px;font-size:14px}
+footer a{color:#fff}
+footer a[aria-current]{color:#57CAFF}
+
+@media (max-width:1100px){
+  .deco{display:none}
+  main{grid-template-columns:1fr}
+  nav{position:static}
+}
+@media (max-width:700px){
+  .topbar{height:64px;padding:0 20px}
+  .logo{font-size:20px}
+  header.hero{padding:36px 20px 8px;gap:16px}
+  h1{font-size:42px;letter-spacing:-1.4px}
+  .intro{font-size:17px}
+  main{padding:16px 20px 56px;gap:24px}
+  nav{padding:18px 20px 12px;border-radius:20px}
+  .sections{gap:22px}
+  section{padding:24px 20px 28px;border-radius:22px;box-shadow:5px 5px 0 var(--c)}
+  .sec-head{gap:14px}
+  .badge{width:40px;height:40px;border-radius:12px}
+  h2.title{font-size:22px}
+  .body p,.body li,p.note,dd{font-size:16px}
+  h3{font-size:17px}
+  dl>div{flex-direction:column;gap:4px}
+  footer{padding:36px 20px;gap:28px;flex-direction:column}
+}
+@media (prefers-reduced-motion:reduce){
+  .deco{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="logo"><span class="o">{</span> DevFest Lima <span class="y">}</span></span>
+  <a href="#">Términos</a>
+</div>
+
+<div class="hero-wrap">
+  <svg class="deco" aria-hidden="true" width="150" height="150" viewBox="0 0 120 120" style="--fx:-12px;--fy:16px;--fr:-18deg;--fdur:5.2s;right:70px;top:40px"><circle cx="60" cy="60" r="42" fill="none" stroke="#EA4335" stroke-width="16"/></svg>
+  <svg class="deco" aria-hidden="true" width="56" height="56" viewBox="0 0 46 46" style="--fx:8px;--fy:-18px;--fr:26deg;--fdur:3.8s;right:270px;top:70px"><path d="M17 3h12v14h14v12H29v14H17V29H3V17h14z" fill="#57CAFF" stroke="#1E1E1E" stroke-width="2.5" stroke-linejoin="round"/></svg>
+  <svg class="deco" aria-hidden="true" width="78" height="60" viewBox="0 0 90 70" style="--fx:10px;--fy:-14px;--fr:10deg;--fdur:4.4s;right:230px;top:280px"><line x1="14" y1="62" x2="44" y2="8" stroke="#4285F4" stroke-width="11" stroke-linecap="round"/><line x1="40" y1="62" x2="70" y2="8" stroke="#4285F4" stroke-width="11" stroke-linecap="round"/></svg>
+  <svg class="deco" aria-hidden="true" width="58" height="58" viewBox="0 0 52 52" style="--fx:-10px;--fy:-16px;--fr:-28deg;--fdur:4s;right:64px;top:300px"><path d="M18 4h16v14h14v16H34v14H18V34H4V18h14z" transform="rotate(45 26 26)" fill="#34A853" stroke="#1E1E1E" stroke-width="2.5" stroke-linejoin="round"/></svg>
+
+  <header class="hero">
+    <div class="pills">
+      <span class="pill dark">Community Edition</span>
+      <span class="pill blue">2026</span>
+      <span class="pill white">Legal</span>
+    </div>
+    <h1>Política de Privacidad</h1>
+    <p class="updated">Última actualización: <mark>[28 de octubre de 2026]</mark></p>
+    <p class="intro">Esta política explica qué datos recoge la aplicación DevFest Lima 2026 (la “App”), para qué los usamos y qué derechos tienes sobre ellos. La App es operada por <mark>[GDG Open Lima / nombre del organizador]</mark> (“nosotros”), organizador del evento DevFest Lima 2026.</p>
+    <p class="intro">Al usar la App aceptas lo que se describe aquí.</p>
+  </header>
+</div>
+
+<main>
+  <nav aria-label="Contenido">
+    <h2>Contenido</h2>
+    <ol>
+      <li><a href="#sec-1"><span>01</span><span>Datos que recogemos</span></a></li>
+      <li><a href="#sec-2"><span>02</span><span>Uso de la cámara</span></a></li>
+      <li><a href="#sec-3"><span>03</span><span>Para qué usamos tus datos</span></a></li>
+      <li><a href="#sec-4"><span>04</span><span>Qué ven otras personas</span></a></li>
+      <li><a href="#sec-5"><span>05</span><span>Con quién compartimos tus datos</span></a></li>
+      <li><a href="#sec-6"><span>06</span><span>Seguridad</span></a></li>
+      <li><a href="#sec-7"><span>07</span><span>Cuánto tiempo guardamos tus datos</span></a></li>
+      <li><a href="#sec-8"><span>08</span><span>Tus derechos y eliminación de cuenta</span></a></li>
+      <li><a href="#sec-9"><span>09</span><span>Menores de edad</span></a></li>
+      <li><a href="#sec-10"><span>10</span><span>Cambios en esta política</span></a></li>
+      <li><a href="#sec-11"><span>11</span><span>Contacto</span></a></li>
+    </ol>
+  </nav>
+
+  <div class="sections">
+
+    <section id="sec-1" style="--c:#4285F4;--t:#D2E3FC">
+      <div class="sec-head"><span class="badge" aria-hidden="true">01</span><h2 class="title">Datos que recogemos</h2></div>
+      <div class="body">
+        <h3><span class="l" aria-hidden="true">a</span>Datos de tu cuenta</h3>
+        <p>Para iniciar sesión usas tu cuenta de Google, GitHub o Apple. A través de Firebase Authentication (un servicio de Google) recibimos:</p>
+        <ul>
+          <li><span>Tu nombre o nombre de usuario</span></li>
+          <li><span>Tu correo electrónico</span></li>
+          <li><span>Tu foto de perfil, si tu cuenta la tiene</span></li>
+          <li><span>Un identificador único de usuario</span></li>
+          <li><span>El proveedor con el que entraste (Google, GitHub o Apple)</span></li>
+        </ul>
+        <p class="note" style="--nt:#D2E3FC;--nc:#4285F4"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg><span>Nunca recibimos ni guardamos tu contraseña.</span></p>
+
+        <h3><span class="l" aria-hidden="true">b</span>Datos de participación en el evento</h3>
+        <ul>
+          <li><span>Los códigos QR que escaneas durante el evento</span></li>
+          <li><span>Las gemas que acumulas y tu posición en el ranking</span></li>
+        </ul>
+
+        <h3><span class="l" aria-hidden="true">c</span>Datos guardados solo en tu dispositivo</h3>
+        <ul>
+          <li><span>Las charlas que agregas a tu agenda personal</span></li>
+          <li><span>Preferencias y una copia temporal de la agenda, para que la App funcione sin conexión</span></li>
+        </ul>
+        <p class="note" style="--nt:#CEEAD6;--nc:#34A853"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg><span>Estos datos se quedan en tu teléfono y se borran al desinstalar la App.</span></p>
+
+        <h3><span class="l" aria-hidden="true">d</span>Datos técnicos</h3>
+        <p>Para autenticarte y mantener tu sesión segura, Firebase puede procesar datos técnicos como tu dirección IP y el tipo de dispositivo.</p>
+      </div>
+    </section>
+
+    <section id="sec-2" style="--c:#A142F4;--t:#E9D2FD">
+      <div class="sec-head"><span class="badge" aria-hidden="true">02</span><h2 class="title">Uso de la cámara</h2></div>
+      <div class="body">
+        <p>La App pide permiso de cámara solo para escanear los códigos QR del evento. Las imágenes se procesan en tu dispositivo con Google ML Kit, y no se guardan ni se envían a ningún servidor. Solo enviamos el texto del código QR que leíste, para registrar tus gemas.</p>
+        <p class="note" style="--nt:#C6ECFF;--nc:#57CAFF"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg><span>El permiso es opcional: si no lo das, puedes seguir usando el resto de la App.</span></p>
+      </div>
+    </section>
+
+    <section id="sec-3" style="--c:#34A853;--t:#CEEAD6">
+      <div class="sec-head"><span class="badge" aria-hidden="true">03</span><h2 class="title">Para qué usamos tus datos</h2></div>
+      <div class="body">
+        <ul>
+          <li><span>Identificarte y mantener tu sesión iniciada</span></li>
+          <li><span>Registrar los QR que escaneas y sumar tus gemas</span></li>
+          <li><span>Armar y mostrar el ranking de participantes</span></li>
+          <li><span>Mostrarte la agenda del evento y tu agenda personal</span></li>
+          <li><span>Prevenir el fraude, por ejemplo que un mismo código se use más de una vez</span></li>
+        </ul>
+        <p class="note" style="--nt:#FDE293;--nc:#FBBC04"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg><span>No vendemos tus datos, no los usamos para publicidad y no te rastreamos fuera de la App.</span></p>
+      </div>
+    </section>
+
+    <section id="sec-4" style="--c:#FBBC04;--t:#FDE293">
+      <div class="sec-head"><span class="badge" aria-hidden="true">04</span><h2 class="title">Qué ven otras personas</h2></div>
+      <div class="body">
+        <p>Tu nombre, tu foto de perfil y tu cantidad de gemas pueden aparecer en el ranking, que ven los demás asistentes dentro de la App.</p>
+        <p class="note" style="--nt:#E9D2FD;--nc:#A142F4"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.2-7 10-4-1.8-7-5.5-7-10V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg><span>Tu correo electrónico nunca se muestra a otros usuarios.</span></p>
+      </div>
+    </section>
+
+    <section id="sec-5" style="--c:#57CAFF;--t:#C6ECFF">
+      <div class="sec-head"><span class="badge" aria-hidden="true">05</span><h2 class="title">Con quién compartimos tus datos</h2></div>
+      <div class="body">
+        <p>Solo con los proveedores que necesitamos para que la App funcione:</p>
+        <ul>
+          <li><span>Google Firebase (autenticación): <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad de Google</a></span></li>
+          <li><span>Google, GitHub o Apple, según el proveedor con el que inicies sesión</span></li>
+          <li><span><mark>[Nombre/proveedor del servidor backend]</mark>, donde se guardan las gemas y el ranking</span></li>
+        </ul>
+        <p>Además, podemos compartir datos si una autoridad competente lo exige por ley.</p>
+      </div>
+    </section>
+
+    <section id="sec-6" style="--c:#4285F4;--t:#D2E3FC">
+      <div class="sec-head"><span class="badge" aria-hidden="true">06</span><h2 class="title">Seguridad</h2></div>
+      <div class="body">
+        <p>Toda la comunicación entre la App y nuestros servidores va cifrada (HTTPS). El acceso a tu información se protege con los tokens de sesión de Firebase.</p>
+      </div>
+    </section>
+
+    <section id="sec-7" style="--c:#A142F4;--t:#E9D2FD">
+      <div class="sec-head"><span class="badge" aria-hidden="true">07</span><h2 class="title">Cuánto tiempo guardamos tus datos</h2></div>
+      <div class="body">
+        <p>Guardamos los datos de tu cuenta y tu participación mientras dure el evento y hasta <mark>[X meses]</mark> después de que termine. Luego los eliminamos o los anonimizamos. También puedes pedir que los borremos antes (ver el punto 8).</p>
+      </div>
+    </section>
+
+    <section id="sec-8" style="--c:#34A853;--t:#CEEAD6">
+      <div class="sec-head"><span class="badge" aria-hidden="true">08</span><h2 class="title">Tus derechos y eliminación de cuenta</h2></div>
+      <div class="body">
+        <p>Según la Ley N.° 29733, Ley de Protección de Datos Personales del Perú, y su reglamento, puedes acceder a tus datos, rectificarlos, cancelarlos u oponerte a su tratamiento (derechos ARCO).</p>
+        <p>Para eliminar tu cuenta y todos tus datos, escríbenos a <mark>[correo@dominio.com]</mark> con el asunto “Eliminar mi cuenta”, desde el correo asociado a tu cuenta o indicando con qué proveedor iniciaste sesión. Eliminaremos tus datos en un plazo máximo de <mark>[30]</mark> días.</p>
+        <p>Puedes cerrar sesión cuando quieras desde la pantalla de Perfil. Para borrar los datos guardados en tu teléfono, desinstala la App.</p>
+      </div>
+    </section>
+
+    <section id="sec-9" style="--c:#FBBC04;--t:#FDE293">
+      <div class="sec-head"><span class="badge" aria-hidden="true">09</span><h2 class="title">Menores de edad</h2></div>
+      <div class="body">
+        <p>La App está dirigida a los asistentes del DevFest Lima 2026. Si eres menor de 14 años, necesitas el consentimiento de tu madre, padre o tutor para usarla. Si nos enteramos de que recogimos datos de un menor sin ese consentimiento, los eliminaremos.</p>
+      </div>
+    </section>
+
+    <section id="sec-10" style="--c:#57CAFF;--t:#C6ECFF">
+      <div class="sec-head"><span class="badge" aria-hidden="true">10</span><h2 class="title">Cambios en esta política</h2></div>
+      <div class="body">
+        <p>Si cambiamos esta política, publicaremos la nueva versión en esta página y actualizaremos la fecha de arriba.</p>
+      </div>
+    </section>
+
+    <section id="sec-11" style="--c:#4285F4;--t:#D2E3FC">
+      <div class="sec-head"><span class="badge" aria-hidden="true">11</span><h2 class="title">Contacto</h2></div>
+      <div class="body">
+        <dl>
+          <div><dt>Organiza</dt><dd><mark>[GDG Open Lima / nombre del organizador]</mark></dd></div>
+          <div><dt>Correo</dt><dd><mark>[correo@dominio.com]</mark></dd></div>
+          <div><dt>Web</dt><dd><mark>[https://...]</mark></dd></div>
+        </dl>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="col">
+    <span class="logo"><span class="o">{</span> DevFest Lima <span class="y">}</span></span>
+    <span class="muted">Community Edition · Sáb 21 nov · Lima</span>
+  </div>
+  <div class="col" style="font-size:14px;gap:8px">
+    <span class="muted">¿Dudas sobre tus datos?</span>
+    <span><mark>[correo@dominio.com]</mark></span>
+    <span class="links"><a href="#">Términos</a><a href="#" aria-current="page">Política de privacidad</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
